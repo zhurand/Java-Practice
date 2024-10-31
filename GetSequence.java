@@ -34,6 +34,21 @@ public class GetSequence {
 
         System.out.println(getSequence(a, b));
 
+        /*  Решение циклом
+        if (a > b) {
+            while (a >= b) {
+                System.out.print(a + " ");
+                a--;
+            }
+        }
+        else {
+            while (a <= b) {
+                System.out.print(a + " ");
+                a++;
+            }
+        }
+        */
+
     }
 
 }

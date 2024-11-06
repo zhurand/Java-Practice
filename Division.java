@@ -28,19 +28,17 @@ public class Division {
                 numbersInt[count++] = Integer.parseInt(number);
             }
 
-            try {
-                int result = numbersInt[0] / numbersInt[1];
-                System.out.println(result);
-            } catch (ArithmeticException e) {
-                System.out.println("Делить на ноль нельзя!");
-                e.printStackTrace();
-            }
+            int result = numbersInt[0] / numbersInt[1];
+            System.out.println(result);
 
             scanner.close();
 
         } catch (FileNotFoundException e) {
-            System.out.println("Произошла ошибка.");
-            e.printStackTrace();
+            System.out.println("Не удается найти указанный файл.");
+            //e.printStackTrace();
+        } catch (ArithmeticException e) {
+            System.out.println("Делить на ноль нельзя!");
+            //e.printStackTrace();
         }
 
     }
